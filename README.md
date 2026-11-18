@@ -86,10 +86,8 @@ Stayora/
 - [ ] Search and category filters
 - [ ] Deployment with a live demo link
 
-## Screenshots
-
-_Add screenshots of the listings page, listing details and the new listing form here._
 
 ## Author
 
-[Your Name] | [LinkedIn URL] | [GitHub URL]
+Goldi 
+
