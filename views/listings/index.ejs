@@ -1,0 +1,39 @@
+<% layout("./layouts/boilerplate") %>
+
+
+        <body>
+            <h1>All Listings</h1>
+            <!-- <form method="GET" action="/listings/new">
+            <button>Create New Listing</button>
+        </form>   humne acchr tag clickpr route call kr diya hai alg btn click ni krn ahai -->
+            <div class="row row-cols-lg-3 row-cols-lg-2 row-cols-lg-1 row-cols-xs-1">
+                <% for(let listing of allListings){ %>
+                    <a href="/listings/<%= listing._id %>" class="listing-links">
+                        <div class=" card list-card ">
+                            <img src="<%= listing.image %>" class="card-img-top" alt="listing_image"
+                                style="height:20rem;">
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">view</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    <b style="font-weight: bolder;">
+                                        <br>
+                                        <%= listing.title %><br><br>
+                                    </b>
+                                    <%= listing.description %><br><br>
+
+                                        <%= listing.price ? listing.price.toLocaleString("en-IN") : "N/A" %> / Day <br>
+
+                                            <%= listing.location %><br>
+                                                <%= listing.country %><br>
+
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <% } %>
+            </div>
+
+
+        </body>

@@ -1,0 +1,14 @@
+<% if(success && success.length){ %>
+    <!-- sucees   ek aray hai jo flash ke hum save kr rhe hai hai ab vo arrya to ahi apr uske nader ka elemnt khali hai os we have to use success and condn for emyt arrya  -->
+    <div class="alert alert-success alert-dismissible fade show col-6 offset-3" role="alert">
+        <%= success %>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <% } %>
+        <% if(error && error.length){ %>
+            <!-- sucees   ek aray hai jo flash ke hum save kr rhe hai hai ab vo arrya to ahi apr uske nader ka elemnt khali hai os we have to use success and condn for emyt arrya  -->
+            <div class="alert alert-danger alert-dismissible fade show col-6 offset-3" role="alert">
+                <%= error %>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <% } %>
